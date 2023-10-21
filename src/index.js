@@ -1,2 +1,2 @@
 import { scss } from "./index.scss";
-import { navbar } from "./navbar.js";
+import { mainPage } from "./main-page.js";
