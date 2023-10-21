@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 *, ::before, ::after {
     box-sizing: border-box;
@@ -13,10 +13,11 @@
 }
 
 body {
-    background-image: url(./images/anime-ramen.png);
+    background-image: url(./images/kimchi-ramen.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
 
 #content {
@@ -28,9 +29,9 @@ body {
     @include flexDisplay();
     width: 100vw;
     font-size: 60px;
-    font-family: 'Pixelify Sans', sans-serif;
-    padding: 5px;
-    border: 2px solid green;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(0, 0, 0, 0.54);
+    color: white;
 }
 
 nav {
@@ -38,8 +39,9 @@ nav {
     flex-direction: row;
     gap: 25px;
     width: 100vw;
-    font-family: 'Pixelify Sans', sans-serif;
-    border: 2px solid green;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(0, 0, 0, 0.54);
+    color: white;
     .home::after, .menu::after, .contact::after {
         content: "";
         position: absolute;
@@ -64,4 +66,25 @@ nav :nth-child(n + 1) {
     cursor: pointer;
     padding: 5px;
     transition: 300ms;
+}
+
+main {
+    @include flexDisplay();
+    width: 100vw;
+    height: 74vh;
+    .mainContent {
+        flex-direction: column;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white; 
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 25px;
+        padding: 5px;
+    }
+}
+
+footer {
+    @include flexDisplay();
+    background-color: rgba(0, 0, 0, 0.54);
+    width: 100%;
 }

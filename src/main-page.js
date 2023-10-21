@@ -28,8 +28,20 @@ function navbar() {
 
 function main() {
     const main = document.createElement("main");
+    const mainContent = document.createElement("div");
+    mainContent.textContent = "Welcome To Noodle"
+    main.appendChild(mainContent);
     content.appendChild(main);
+    mainContent.classList.add("mainContent");
+}
+
+function footer() {
+    const footer = document.createElement("footer");
+    footer.textContent = "footer";
+    content.appendChild(footer);
 }
 
 header();   
 navbar();
+main();
+footer();
