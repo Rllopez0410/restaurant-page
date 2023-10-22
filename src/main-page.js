@@ -29,15 +29,19 @@ function navbar() {
 function main() {
     const main = document.createElement("main");
     const mainContent = document.createElement("div");
-    mainContent.textContent = "Welcome To Noodle"
+    const orderBtn = document.createElement("div");
+    mainContent.textContent = "Welcome To Noodle";
+    orderBtn.textContent = "Order Now";
     main.appendChild(mainContent);
+    main.appendChild(orderBtn);
     content.appendChild(main);
     mainContent.classList.add("mainContent");
+    orderBtn.classList.add("orderBtn");
 }
 
 function footer() {
     const footer = document.createElement("footer");
-    footer.textContent = "footer";
+    footer.textContent = "Copyright © 2023 Roger Lopez";
     content.appendChild(footer);
 }
 
