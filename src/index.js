@@ -3,7 +3,7 @@ import { contactPage } from "./contact-page.js";
 import { menuPage } from "./menu-page.js";
 import { scss } from "./index.scss";
 
-const content = document.getElementById("content");
+export const content = document.getElementById("content");
 content.classList.add("content");
 
  // -- Navigation Bar --
@@ -29,6 +29,12 @@ navBar.classList.add("nav");
 const mainDiv = document.createElement("div");
 content.appendChild(mainDiv);
 mainDiv.classList.add("main");
+
+// -- Footer --
+
+const footer = document.createElement("footer");
+footer.textContent = "footer";
+content.appendChild(footer);
 
 // -- Functionality --
 
@@ -62,3 +68,5 @@ menuTab.addEventListener("click", () => {
 contactTab.addEventListener("click", () => {
     displayNewContent("contact")
 })
+
+displayNewContent("home");
